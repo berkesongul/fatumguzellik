@@ -1,0 +1,24 @@
+{
+  "name": "fatumguzellik",
+  "version": "1.0.0",
+  "description": "Fatum Güzellik Salonu - HTML/CSS/JS Web Sitesi",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "build": "echo 'Static site - no build needed'",
+    "dev": "live-server"
+  },
+  "keywords": [
+    "güzellik",
+    "salonu",
+    "lazer epilasyon",
+    "cilt bakımı",
+    "manikür",
+    "pedikür",
+    "soma",
+    "manisa"
+  ],
+  "author": "Fatum Güzellik",
+  "license": "MIT",
+  "devDependencies": {}
+}
