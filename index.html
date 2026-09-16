@@ -6,7 +6,10 @@
     <title>Fatum Güzellik Salonu | Profesyonel Güzellik Hizmetleri</title>
     <meta name="description" content="20 yıllık tecrübe ile Soma'da profesyonel güzellik hizmetleri. Lazer epilasyon, cilt bakımı, manikür, protez tırnak ve daha fazlası.">
     <link rel="icon" type="image/png" href="assets/logo.png">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=10">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -14,32 +17,42 @@
     <nav class="navbar">
         <div class="container">
             <div class="nav-wrapper">
-                <div class="logo">
+                <a class="logo" href="#home" aria-label="Fatum Güzellik ana sayfa">
                     <img src="assets/logo.png" alt="Fatum Güzellik" class="logo-img">
                     <span>Fatum Güzellik</span>
-                </div>
-                <div class="nav-toggle" id="navToggle">
+                </a>
+                <button class="nav-toggle" id="navToggle" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="navMenu">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </button>
                 <ul class="nav-menu" id="navMenu">
-                    <li><a href="#home" class="nav-link">Ana Sayfa</a></li>
-                    <li><a href="#about" class="nav-link">Hakkında</a></li>
+                    <li><a href="#about" class="nav-link">Hikâyemiz</a></li>
                     <li><a href="#services" class="nav-link">Hizmetler</a></li>
                     <li><a href="#contact" class="nav-link">İletişim</a></li>
+                    <li><a href="https://wa.me/905011413051?text=Merhaba%2C%20randevu%20almak%20istiyorum" target="_blank" rel="noopener" class="nav-cta">Randevu al</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero" style="background-image: url('assets/banner.jpg');">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1>Güzelliğinizi Profesyonel Ellerle Keşfedin</h1>
-            <p>Fatum Güzellik Salonu'nda modern teknikler ve uzman kadromuzla size özel bakım hizmetleri sunuyoruz. Kendinizi yenilemek için doğru adrestesiniz.</p>
-            <a href="#services" class="btn btn-primary">Hizmetleri Keşfet</a>
+    <section id="home" class="hero">
+        <div class="container hero-layout">
+            <div class="hero-content">
+                <p class="eyebrow">Soma · 2010'dan beri</p>
+                <h1>Bakımda tecrübe,<br><em>sonuçta özen.</em></h1>
+                <p class="hero-lead">Cilt bakımı, lazer epilasyon ve kişisel bakım uygulamalarında ihtiyacınıza göre, açık ve özenli bir yaklaşım.</p>
+                <div class="hero-actions">
+                    <a href="https://wa.me/905011413051?text=Merhaba%2C%20randevu%20almak%20istiyorum" target="_blank" rel="noopener" class="btn btn-primary">WhatsApp'tan randevu al</a>
+                    <a href="#services" class="text-link">Hizmetleri incele <span aria-hidden="true">↘</span></a>
+                </div>
+                <p class="hero-note"><span>20 yıllık sektör deneyimi</span><span>Soma'da yüz yüze danışmanlık</span></p>
+            </div>
+            <figure class="hero-visual">
+                <img src="assets/banner.jpg" alt="Fatum Güzellik Salonu karşılama alanı">
+                <figcaption>Fatum Güzellik · Soma</figcaption>
+            </figure>
         </div>
     </section>
 
@@ -148,47 +161,47 @@
             <p class="section-subtitle">Fatum Güzellik'te son model cihazlarımız ve uzman ekibimiz ile hizmetlerimizi gururla sunarız.</p>
             
             <div class="services-grid">
-                <div class="service-card">
+                <a class="service-card" href="lazer-epilasyon.html">
                     <img src="assets/lazer-epilasyon.png" alt="Lazer Epilasyon" class="service-image">
                     <h3>Lazer Epilasyon</h3>
                     <p>14 yılı aşkın deneyimimizi en son teknoloji cihazımız 3D Diolight Pro ile bir araya getirdik.</p>
-                    <a href="https://wa.me/905011413051?text=Lazer%20Epilasyon%20hizmetinin%20fiyatı%20hakkında%20bilgi%20almak%20istiyorum" target="_blank" class="btn-link">Fiyat Al</a>
-                </div>
+                    <span class="service-card-link">Hizmeti incele <span aria-hidden="true">↗</span></span>
+                </a>
 
-                <div class="service-card">
+                <a class="service-card" href="cilt-bakimi.html">
                     <img src="assets/cilt-bakimi.jpg" alt="Cilt Bakımı" class="service-image">
                     <h3>Cilt Bakımı</h3>
                     <p>Her cilt kendine özel bir dokunuşu hak eder. Güney Kore'nin seçkin markası FAU, yerli profesyonel markamız Dr. Dermis ile cilt bakımı işlemlerimiz hizmetinizdedir.</p>
-                    <a href="https://wa.me/905011413051?text=Cilt%20Bakımı%20hizmetinin%20fiyatı%20hakkında%20bilgi%20almak%20istiyorum" target="_blank" class="btn-link">Fiyat Al</a>
-                </div>
+                    <span class="service-card-link">Hizmeti incele <span aria-hidden="true">↗</span></span>
+                </a>
 
-                <div class="service-card">
+                <a class="service-card" href="bolgesel-incelme.html">
                     <img src="assets/bolgesel-incelme.png" alt="Bölgesel İncelme" class="service-image">
                     <h3>Bölgesel İncelme</h3>
                     <p>Vücudunuzu şekillendirmenin en konforlu yolu Jordi Shape ile beraber tüm bölgesel yağlanmalarınız ve lipödemlerinizden kurtulun.</p>
-                    <a href="https://wa.me/905011413051?text=Bölgesel%20İncelme%20hizmetinin%20fiyatı%20hakkında%20bilgi%20almak%20istiyorum" target="_blank" class="btn-link">Fiyat Al</a>
-                </div>
+                    <span class="service-card-link">Hizmeti incele <span aria-hidden="true">↗</span></span>
+                </a>
 
-                <div class="service-card">
+                <a class="service-card" href="manikur-pedikur.html">
                     <img src="assets/manikur-peditur.png" alt="Manikür & Pedikür" class="service-image">
                     <h3>Manikür & Pedikür</h3>
                     <p>El ve ayak bakımını, estetik bir dokunuşun ötesinde bir bakım ritüeli olarak görüyoruz. Cildinizin ve tırnak yapınızın ihtiyaçlarına göre yöntem belirliyoruz.</p>
-                    <a href="https://wa.me/905011413051?text=Manikür%20ve%20Pedikür%20hizmetinin%20fiyatı%20hakkında%20bilgi%20almak%20istiyorum" target="_blank" class="btn-link">Fiyat Al</a>
-                </div>
+                    <span class="service-card-link">Hizmeti incele <span aria-hidden="true">↗</span></span>
+                </a>
 
-                <div class="service-card">
+                <a class="service-card" href="protez-tirnak.html">
                     <img src="assets/protez-tirnak.png" alt="Protez Tırnak" class="service-image">
                     <h3>Protez Tırnak</h3>
                     <p>Dayanıklılık ve zarafet bir arada. Protez tırnak uygulamaları, doğal tırnak yapısını koruyarak uzun, düzgün ve kusursuz görünüm elde etmenizi sağlar.</p>
-                    <a href="https://wa.me/905011413051?text=Protez%20Tırnak%20hizmetinin%20fiyatı%20hakkında%20bilgi%20almak%20istiyorum" target="_blank" class="btn-link">Fiyat Al</a>
-                </div>
+                    <span class="service-card-link">Hizmeti incele <span aria-hidden="true">↗</span></span>
+                </a>
 
-                <div class="service-card">
+                <a class="service-card" href="agda.html">
                     <img src="assets/agda.jpg" alt="Ağda" class="service-image">
                     <h3>Ağda</h3>
                     <p>İstenmeyen tüylerden kurtulmayı hızlı, konforlu ve etkili bir deneyim haline getiriyoruz. Ağda hizmetlerimiz uzman ekibimiz tarafından titizlikle gerçekleştirilir.</p>
-                    <a href="https://wa.me/905011413051?text=Ağda%20hizmetinin%20fiyatı%20hakkında%20bilgi%20almak%20istiyorum" target="_blank" class="btn-link">Fiyat Al</a>
-                </div>
+                    <span class="service-card-link">Hizmeti incele <span aria-hidden="true">↗</span></span>
+                </a>
             </div>
         </div>
     </section>
@@ -265,10 +278,10 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Fatum Güzellik Salonu. Tüm hakları saklıdır.</p>
+            <p>&copy; 2026 Fatum Güzellik Salonu. Tüm hakları saklıdır.</p>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js?v=2"></script>
 </body>
 </html>

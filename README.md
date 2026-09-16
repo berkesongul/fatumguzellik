@@ -1,5 +1,7 @@
 # Fatum Güzellik Salonu - HTML/CSS/JS Versiyonu
 
+VPS üzerinde Docker ile yayınlama için [DOCKER_DEPLOY.md](DOCKER_DEPLOY.md) dosyasına bakın. Statik site Nginx ile sunulur; isteğe bağlı Caddy Compose dosyası alan adı için HTTPS sağlar.
+
 Bu repo, Fatum Güzellik Salonu web sitesinin HTML5, CSS3 ve Vanilla JavaScript ile oluşturulmuş hafif ve hızlı sürümüdür.
 
 ## Özellikler
@@ -9,7 +11,7 @@ Bu repo, Fatum Güzellik Salonu web sitesinin HTML5, CSS3 ve Vanilla JavaScript 
 ✅ **Yüksek Performans** - Hızlı yükleme süreleri
 ✅ **SEO Uyumlu** - Arama motorları için optimize edilmiş
 ✅ **Mobil Menü** - Hamburger menü ile mobil navigasyon
-✅ **İletişim Formu** - Basit form doğrulaması ve gönderimi
+✅ **İletişim Formu** - Basit form doğrulaması (gerçek gönderim henüz bağlı değil)
 ✅ **Pürüzsüz Kaydırma** - Smooth scroll efektleri
 
 ## Dosya Yapısı
@@ -76,7 +78,7 @@ Ardından tarayıcınızda `http://localhost:8000` (veya gösterilen port) adres
 
 ### Contact Section
 - İletişim bilgileri (adres, telefon, e-posta)
-- Çalışan iletişim formu
+- Demo iletişim formu (gerçek e-posta göndermez)
 
 ## Özelleştirme
 

@@ -1,0 +1,13 @@
+.git
+.gitignore
+.gitattributes
+.DS_Store
+.env
+.env.*
+node_modules
+dist
+build
+*.log
+*.md
+compose*.yaml
+Caddyfile

@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     navToggle.addEventListener('click', function() {
         navToggle.classList.toggle('active');
         navMenu.classList.toggle('active');
+        navToggle.setAttribute('aria-expanded', navMenu.classList.contains('active'));
     });
 
     // Close menu when a link is clicked
@@ -15,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         link.addEventListener('click', function() {
             navToggle.classList.remove('active');
             navMenu.classList.remove('active');
+            navToggle.setAttribute('aria-expanded', 'false');
         });
     });
 
@@ -134,9 +136,9 @@ document.addEventListener('DOMContentLoaded', function() {
         let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
         if (scrollTop > 100) {
-            navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.15)';
+            navbar.style.boxShadow = '0 8px 24px rgba(37, 33, 31, 0.06)';
         } else {
-            navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+            navbar.style.boxShadow = 'none';
         }
 
         lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;

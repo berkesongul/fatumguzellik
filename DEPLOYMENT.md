@@ -1,5 +1,7 @@
 # Dağıtım ve Yayınlama Rehberi
 
+VPS + Docker kurulumu için güncel ve uygulanabilir adımlar: [DOCKER_DEPLOY.md](DOCKER_DEPLOY.md). Aşağıdaki yöntemler diğer hosting seçenekleri içindir.
+
 Bu dokümantasyon, Fatum Güzellik Salonu web sitesini farklı platformlarda nasıl yayınlayacağınızı anlatır.
 
 ## 1. Sunucu Gereksinimleri
